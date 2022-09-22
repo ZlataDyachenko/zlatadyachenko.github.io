@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://github.com/ZlataDyachenko.github.io.git/sitemap.xml
