@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week 2 | Academic</title>
+    <link>https://ZlataDyachenko.github.io/tag/week-2/</link>
+      <atom:link href="https://ZlataDyachenko.github.io/tag/week-2/index.xml" rel="self" type="application/rss+xml" />
+    <description>Week 2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ZlataDyachenko.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Week 2</title>
+      <link>https://ZlataDyachenko.github.io/tag/week-2/</link>
+    </image>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/week2/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/week2/</guid>
+      <description>&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;Last week I managed to complete several academic tasks, which I would like to tell you more about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information security and information security&amp;rdquo;, I completed the third laboratory work, the topic of which was encryption by gamming. Implemented encryption using a finite- length gamma 👏🏼&lt;/li&gt;
+&lt;li&gt;She also completed the third laboratory work in the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, which was aimed at gaining skills in working with Octave.&lt;/li&gt;
+&lt;li&gt;Completed laboratory work on the discipline &amp;ldquo;Modeling of wireless networks&amp;rdquo;, thanks to which she learned how to apply distributions to transform random variables.&lt;/li&gt;
+&lt;li&gt;She wrote a test paper on the discipline &amp;ldquo;Additional chapters of queuing theory&amp;rdquo;, in which a mathematical model of a network with unicast connections was considered. To be honest, it wasn&amp;rsquo;t difficult. But in a week there will be another test in this discipline. Wish me luck!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I continue to keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 3, 2022 --><html lang="en-us" >
+<!-- Last Published: November 16, 2022 --><html lang="en-us" >
 
 
 <head>
@@ -267,7 +267,7 @@
 
 
 
-  <meta name="author" content="Дяченко Злата Константиновна" />
+  <meta name="author" content="Dyachenko Zlata Konstantinovna" />
 
 
 
@@ -275,9 +275,11 @@
 
   
 
-<meta name="description" content="Введение в систему контроля версий git." />
+<meta name="description" content="Introduction to the git version control system." />
 
 
+
+  <link rel="alternate" hreflang="ru" href="https://ZlataDyachenko.github.io/ru/post/writing-technical-content/" />
 
 <link rel="alternate" hreflang="en-us" href="https://ZlataDyachenko.github.io/post/writing-technical-content/" />
 <link rel="canonical" href="https://ZlataDyachenko.github.io/post/writing-technical-content/" />
@@ -316,8 +318,8 @@
 <meta property="twitter:image" content="https://ZlataDyachenko.github.io/post/writing-technical-content/featured.jpg" />
 <meta property="og:site_name" content="Academic" />
 <meta property="og:url" content="https://ZlataDyachenko.github.io/post/writing-technical-content/" />
-<meta property="og:title" content="Управление версиями. Git. | Academic" />
-<meta property="og:description" content="Введение в систему контроля версий git." /><meta property="og:image" content="https://ZlataDyachenko.github.io/post/writing-technical-content/featured.jpg" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Version control. Git. | Academic" />
+<meta property="og:description" content="Introduction to the git version control system." /><meta property="og:image" content="https://ZlataDyachenko.github.io/post/writing-technical-content/featured.jpg" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -354,7 +356,7 @@
     "@type": "WebPage",
     "@id": "https://ZlataDyachenko.github.io/post/writing-technical-content/"
   },
-  "headline": "Управление версиями. Git.",
+  "headline": "Version control. Git.",
   
   "image": [
     "https://ZlataDyachenko.github.io/post/writing-technical-content/featured.jpg"
@@ -365,7 +367,7 @@
   
   "author": {
     "@type": "Person",
-    "name": "Дяченко Злата Константиновна"
+    "name": "Dyachenko Zlata Konstantinovna"
   },
   
   "publisher": {
@@ -376,7 +378,7 @@
       "url": "https://ZlataDyachenko.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Введение в систему контроля версий git."
+  "description": "Introduction to the git version control system."
 }
 </script>
 
@@ -398,7 +400,7 @@
 
 
   
-  <title>Управление версиями. Git. | Academic</title>
+  <title>Version control. Git. | Academic</title>
 
   
   
@@ -784,6 +786,22 @@
 
         
         
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>English</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://ZlataDyachenko.github.io/ru/post/writing-technical-content/">
+              <span>Русский</span>
+            </a>
+            
+          </div>
+        </li>
+        
 
       </ul>
 
@@ -829,10 +847,10 @@
 
 
 <div class="article-container pt-3">
-  <h1>Управление версиями. Git.</h1>
+  <h1>Version control. Git.</h1>
 
   
-  <p class="page-subtitle">Введение в систему контроля версий git.</p>
+  <p class="page-subtitle">Introduction to the git version control system.</p>
   
 
   
@@ -858,7 +876,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    4 min read
+    5 min read
   </span>
   
 
@@ -893,97 +911,97 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p><strong>Системы контроля версий (Version Control System, VCS)</strong> применяются при работе нескольких человек над одним проектом. Обычно основное дерево проекта хранится в локальном или удалённом репозитории, к которому настроен доступ для участников проекта. При внесении изменений в содержание проекта система контроля версий позволяет их фиксировать, совмещать изменения, произведённые разными участниками проекта, производить откат к любой более ранней версии проекта, если это требуется.</p>
-<h2 id="теоретическая-информация">Теоретическая информация</h2>
-<p>В классических системах контроля версий используется централизованная модель, предполагающая наличие единого репозитория для хранения файлов. Выполнение большинства функций по управлению версиями осуществляется специальным сервером. Участник проекта (пользователь) перед началом работы посредством определённых команд получает нужную ему версию файлов. После внесения изменений, пользователь размещает новую версию в хранилище. При этом предыдущие версии не удаляются из центрального хранилища и к ним можно вернуться в любой момент. Сервер может сохранять не полную версию изменённых файлов, а производить так называемую дельтакомпрессию — сохранять только изменения между последовательными версиями, что позволяет уменьшить объём хранимых данных.
-Системы контроля версий поддерживают возможность отслеживания и разрешения конфликтов, которые могут возникнуть при работе нескольких человек над одним файлом. Можно объединить (слить) изменения, сделанные разными участниками (автоматически или вручную), вручную выбрать нужную версию, отменить изменения вовсе или заблокировать файлы для изменения. В зависимости от настроек блокировка не позволяет другим пользователям получить рабочую копию или препятствует изменению рабочей копии файла средствами файловой системы ОС, обеспечивая таким образом, привилегированный доступ только одному пользователю, работающему с файлом.
-Системы контроля версий также могут обеспечивать дополнительные, более гибкие функциональные возможности. Например, они могут поддерживать работу с несколькими версиями одного файла, сохраняя общую историю изменений до точки ветвления версий и собственные истории изменений каждой ветви. Кроме того, обычно доступна информация о том, кто из участников, когда и какие изменения вносил. Обычно такого рода информация хранится в журнале изменений, доступ к которому можно ограничить. В отличие от классических, в распределённых системах контроля версий центральный репозиторий не является обязательным.
-Среди классических VCS наиболее известны CVS, Subversion, а среди распределённых — Git, Bazaar, Mercurial. Принципы их работы схожи, отличаются они в основном синтаксисом используемых в работе команд.</p>
+      <p><strong>Version Control Systems (Version Control System, VCS)</strong> used when several people are working on the same project. Usually, the main project tree is stored in a local or remote repository, to which access is configured for project participants. When making changes to the project content, the version control system allows you to fix them, combine changes made by different project participants, roll back to any earlier version of the project, if required.</p>
+<h2 id="theoretical-information">Theoretical information</h2>
+<p>In classical version control systems, a centralized model is used, assuming a single repository for storing files. Most version control functions are performed by a special server. The project participant (user) receives the version of files he needs before starting work through certain commands. After making changes, the user places the new version in the repository. At the same time, previous versions are not deleted from the central repository and you can return to them at any time. The server may not save the full version of the modified files, but perform a so—called delta compression - save only changes between successive versions, which reduces the amount of data stored.
+Version control systems support the ability to track and resolve conflicts that may arise when several people work on a single file. You can merge (merge) changes made by different participants (automatically or manually), manually select the desired version, cancel the changes altogether or lock files for modification. Depending on the settings, the lock does not allow other users to get a working copy or prevents the OS file system from changing the working copy of the file, thus providing privileged access to only one user working with the file.
+Version control systems can also provide additional, more flexible functionality. For example, they can support working with multiple versions of a single file, keeping a common history of changes up to the point of branching versions and their own change histories of each branch. In addition, information is usually available about which of the participants, when and what changes were made. Usually this kind of information is stored in the change log, access to which can be restricted. Unlike the classic ones, in distributed version control systems, a central repository is not mandatory.
+Among the classic VCS, the most famous are CVS, Subversion, and among the distributed ones — Git, Bazaar, Mercurial. The principles of their work are similar, they differ mainly in the syntax of the commands used in the work.</p>
 <h2 id="git">Git</h2>
-<p>Git — распределённая система управления версиями файлов. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux. На сегодняшний день поддерживается Джунио Хамано.</p>
-<p>Система спроектирована как набор программ, специально разработанных с учётом их использования в скриптах. Это позволяет удобно создавать специализированные системы контроля версий на базе Git или пользовательские интерфейсы. Например, Cogito является именно таким примером фронтенда к репозиториям Git, а StGit использует Git для управления коллекцией патчей.</p>
-<p>Git поддерживает быстрое разделение и слияние версий, включает инструменты для визуализации и навигации по нелинейной истории разработки.
-Система контроля версий Git представляет собой набор программ командной строки. Доступ к ним можно получить из терминала посредством ввода команды git с различными опциями.
-Благодаря тому, что Git является распределённой системой контроля версий, резервную копию локального хранилища можно сделать простым копированием или архивацией.</p>
-<h3 id="основные-понятия">Основные понятия</h3>
-<p><strong>Репозиторий</strong> — проект, в котором была инициализирована система Git. При инициализации в проект добавляется скрытая папка .git. Репозиторий хранит все рабочие файлы и историю их изменений.</p>
-<p>Корневая папка проекта — это <strong>рабочая область</strong>. В ней находятся все файлы и папки, необходимые для его работы.</p>
-<p><strong>Хранилище</strong> — это содержимое скрытой папки .git. В этой папке хранятся все версии рабочей области и служебная информация. Этим версиям система автоматически даёт название, состоящее из букв и цифр. В примере выше — это bea0f8e и d516600. Не стоит проводить манипуляции с папкой .git вручную. Вся работа с системой производится командами через специальные приложения или консоль.</p>
-<p><strong>Коммит</strong> — специальная команда, которая сохраняет новую версию проекта и добавляет ее в хранилище. В файле с сохранением отображаются: все изменения, которые происходили в рабочей области, автор изменений и краткий комментарий, описывающий суть изменений. Каждый коммит хранит полное состояние рабочей области, её папок и файлов проекта.</p>
-<h3 id="основные-команды-git">Основные команды git</h3>
-<p>Наиболее часто используемые команды git:</p>
-<p>– создание основного дерева репозитория:</p>
+<p>Git is a distributed file version control system. The project was created by Linus Torvalds to manage the development of the Linux kernel. Currently supported by Junio Hamano.</p>
+<p>The system is designed as a set of programs specially designed for their use in scripts. This makes it convenient to create specialized version control systems based on Git or user interfaces. For example, Cogito is just such an example of a frontend to Git repositories, and StGit uses Git to manage a collection of patches.</p>
+<p>Git supports rapid separation and merging of versions, includes tools for visualization and navigation through the non-linear development history.
+The Git version control system is a set of command-line programs. They can be accessed from the terminal by entering the git command with various options.
+Due to the fact that Git is a distributed version control system, a backup copy of the local storage can be made by simple copying or archiving.</p>
+<h3 id="basic-concepts">Basic concepts</h3>
+<p><strong>Repository</strong> — the project in which the Git system was initialized. During initialization , a hidden folder is added to the project .git. The repository stores all working files and the history of their changes.</p>
+<p>The root folder of the project is <strong>workspace</strong>. It contains all the files and folders necessary for its operation.</p>
+<p><strong>Storage</strong> is the contents of a hidden folder.git. All workspace versions and service information are stored in this folder. The system automatically gives these versions a name consisting of letters and numbers. In the example above, these are be0f8e and d516600. It is not necessary to manipulate the folder .git manually. All work with the system is done by commands through special applications or the console.</p>
+<p><strong>Commit</strong> is a special command that saves a new version of the project and adds it to the repository. The saved file displays: all the changes that occurred in the workspace, the author of the changes and a short comment describing the essence of the changes. Each commit stores the complete state of the workspace, its folders and project files.</p>
+<h3 id="basic-git-commands">Basic git commands</h3>
+<p>The most commonly used git commands:</p>
+<p>– creation of the main repository tree:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
-</span></span></code></pre></div><p>– получение обновлений (изменений) текущего дерева из центрального репозитория:</p>
+</span></span></code></pre></div><p>– getting updates (changes) of the current tree from the central repository:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull
-</span></span></code></pre></div><p>– отправка всех произведённых изменений локального дерева в центральный репозиторий:</p>
+</span></span></code></pre></div><p>– sending all the changes made to the local tree to the central repository:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push
-</span></span></code></pre></div><p>– просмотр списка изменённых файлов в текущей директории:</p>
+</span></span></code></pre></div><p>– view the list of modified files in the current directory:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git status
-</span></span></code></pre></div><p>– просмотр текущих изменения:</p>
+</span></span></code></pre></div><p>– view current changes:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git diff
-</span></span></code></pre></div><p>– сохранение текущих изменений:
-– добавить все изменённые и/или созданные файлы и/или каталоги:</p>
+</span></span></code></pre></div><p>– save current changes:
+– add all modified and/or created files and/or directories:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
-</span></span></code></pre></div><p>– добавить конкретные изменённые и/или созданные файлы и/или каталоги:</p>
+</span></span></code></pre></div><p>– add specific modified and/or created files and/or directories:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add имена_файлов
-</span></span></code></pre></div><p>– удалить файл и/или каталог из индекса репозитория (при этом файл и/или каталог остаётся в локальной директории):</p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add file_name
+</span></span></code></pre></div><p>– delete the file and/or directory from the repository index (while the file and/or directory remains in the local directory):</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git rm имена_файлов
-</span></span></code></pre></div><p>– сохранение добавленных изменений:
-– сохранить все добавленные изменения и все изменённые файлы:</p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git rm file_name
+</span></span></code></pre></div><p>– save added changes:
+– save all added changes and all modified files:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git commit -am &#39;Описание коммита&#39;
-</span></span></code></pre></div><p>– сохранить добавленные изменения с внесением комментария через встроенный редактор:</p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git commit -am &#39;Commit description&#39;
+</span></span></code></pre></div><p>– save the added changes with a comment through the built-in editor:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git commit
-</span></span></code></pre></div><p>– создание новой ветки, базирующейся на текущей:</p>
+</span></span></code></pre></div><p>– creating a new branch based on the current one:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout -b имя_ветки
-</span></span></code></pre></div><p>– переключение на некоторую ветку:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout -b_name
+</span></span></code></pre></div><p>– switching to a certain branch:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout имя_ветки
-</span></span></code></pre></div><p>– отправка изменений конкретной ветки в центральный репозиторий:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout branch name
+</span></span></code></pre></div><p>– sending changes of a specific branch to the central repository:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push origin имя_ветки
-</span></span></code></pre></div><p>– слияние ветки с текущим деревом:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push origin_name
+</span></span></code></pre></div><p>– merging a branch with the current tree:</p>
 
   <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git merge --no-ff имя_ветки
-</span></span></code></pre></div><p>– удаление ветки:
-– удаление локальной уже слитой с основным деревом ветки:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git merge --no-ff_name
+</span></span></code></pre></div><p>– deleting a branch:
+– deleting a local branch already merged with the main tree:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch -d имя_ветки
-</span></span></code></pre></div><p>– принудительное удаление локальной ветки:</p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch -d branch_name
+</span></span></code></pre></div><p>– forced deletion of a local branch:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch -D имя_ветки
-</span></span></code></pre></div><p>– удаление ветки с центрального репозитория:</p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch -D branch_name
+</span></span></code></pre></div><p>– deleting a branch from the central repository:</p>
 
-    <i class="fas fa-terminal  pr-1 fa-fw"></i>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push origin :имя_ветки
-</span></span></code></pre></div><h3 id="зная-эти-основы-можно-уже-начинать-работу-с-проектами">Зная эти основы, можно уже начинать работу с проектами.</h3>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push origin :branch name
+</span></span></code></pre></div><h3 id="knowing-these-basics-you-can-already-start-working-with-projects">Knowing these basics, you can already start working with projects.</h3>
 
     </div>
 
@@ -1010,7 +1028,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;text=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git." target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;text=Version&#43;control.&#43;Git." target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1027,7 +1045,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;t=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git." target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;t=Version&#43;control.&#43;Git." target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1046,7 +1064,7 @@
         
       
       <li>
-        <a href="mailto:?subject=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.%20Git.&amp;body=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Version%20control.%20Git.&amp;body=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1063,7 +1081,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git." target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;title=Version&#43;control.&#43;Git." target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1080,7 +1098,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git.%20https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Version&#43;control.&#43;Git.%20https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1097,7 +1115,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git." target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2FZlataDyachenko.github.io%2Fpost%2Fwriting-technical-content%2F&amp;title=Version&#43;control.&#43;Git." target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1130,13 +1148,13 @@
   <div class="media author-card content-widget-hr">
     
       
-      <a href="https://ZlataDyachenko.github.io"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu65ae4dff618a50e0a6dac9a0848d44bc_2852406_270x270_fill_q75_lanczos_center.jpg" alt="Дяченко Злата Константиновна"></a>
+      <a href="https://ZlataDyachenko.github.io"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu65ae4dff618a50e0a6dac9a0848d44bc_2852406_270x270_fill_q75_lanczos_center.jpg" alt="Dyachenko Zlata Konstantinovna"></a>
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://ZlataDyachenko.github.io">Дяченко Злата Константиновна</a></h5>
-      <h6 class="card-subtitle">Студентка 1-го курса магистратуры РУДН</h6>
-      <p class="card-text">Мои научные интересы заключаются в исследовании машинного обучения, моделировании и программной реализации финансовых моделей.</p>
+      <h5 class="card-title"><a href="https://ZlataDyachenko.github.io">Dyachenko Zlata Konstantinovna</a></h5>
+      <h6 class="card-subtitle">1st year student of the RUDN Master&rsquo;s degree</h6>
+      <p class="card-text">My research interests are in the study of machine learning, modeling and software implementation of financial models.</p>
       <ul class="network-icon" aria-hidden="true">
   
     

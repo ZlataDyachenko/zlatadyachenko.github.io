@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week 1 | Academic</title>
+    <link>https://ZlataDyachenko.github.io/tag/week-1/</link>
+      <atom:link href="https://ZlataDyachenko.github.io/tag/week-1/index.xml" rel="self" type="application/rss+xml" />
+    <description>Week 1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ZlataDyachenko.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Week 1</title>
+      <link>https://ZlataDyachenko.github.io/tag/week-1/</link>
+    </image>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/getting-started/</link>
+      <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/getting-started/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;Last week I managed to complete several academic tasks, which I would like to tell you more about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information security and information security&amp;rdquo;, I completed the second laboratory work, the topic of which was encryption using permutations. The topic of cryptography is very entertaining, and I could write a post about it.&lt;/li&gt;
+&lt;li&gt;She also completed the second laboratory work on the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, which was aimed at gaining skills to work with the Markdown markup language. If you see this post, it means I&amp;rsquo;m doing well :)&lt;/li&gt;
+&lt;li&gt;I completed two laboratory works on the discipline &amp;ldquo;Modeling of wireless networks&amp;rdquo;, thanks to which I remembered the basic methods of working with statistical data in Python.&lt;/li&gt;
+&lt;li&gt;Continued studying French. A little more and this site will have the opportunity to choose French as the language (I&amp;rsquo;m kidding, I&amp;rsquo;m still a long way from that, but I can tell you what my name is).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I will keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

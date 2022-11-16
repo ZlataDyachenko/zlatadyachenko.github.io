@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic weekdays | Academic</title>
+    <link>https://ZlataDyachenko.github.io/tag/academic-weekdays/</link>
+      <atom:link href="https://ZlataDyachenko.github.io/tag/academic-weekdays/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic weekdays</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ZlataDyachenko.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Academic weekdays</title>
+      <link>https://ZlataDyachenko.github.io/tag/academic-weekdays/</link>
+    </image>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/week4/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/week4/</guid>
+      <description>&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;It was my mom&amp;rsquo;s birthday last week! 🎉 🎉 🎉
+But I didn&amp;rsquo;t forget about studying either.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information protection and information security&amp;rdquo;, I completed the fifth laboratory work, in which it was necessary to implement probabilistic algorithms for checking the simplicity of a number.&lt;/li&gt;
+&lt;li&gt;I also completed the fifth laboratory work in the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, thanks to which I learned even more about Octave.&lt;/li&gt;
+&lt;li&gt;Wrote the third test paper on the discipline &amp;ldquo;Additional chapters of queuing theory&amp;rdquo;. Wow, there are so many tests on this subject!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I continue to keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/week3/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/week3/</guid>
+      <description>&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;It was my birthday last week! 🎉 🎉 🎉
+But I didn&amp;rsquo;t forget about studying either. I managed to complete several academic tasks, which I would like to tell you more about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information protection and information security&amp;rdquo;, I completed the fourth laboratory work, in which it was necessary to implement four algorithms for finding the greatest common divisor. I remembered the school 👶&lt;/li&gt;
+&lt;li&gt;She also completed the fourth laboratory work on the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, which was aimed at solving systems of linear equations using Octave.&lt;/li&gt;
+&lt;li&gt;Wrote the second test paper on the discipline &amp;ldquo;Additional chapters of the theory of queuing&amp;rdquo;. Waiting for the results 🤞&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I continue to keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/week2/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/week2/</guid>
+      <description>&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;Last week I managed to complete several academic tasks, which I would like to tell you more about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information security and information security&amp;rdquo;, I completed the third laboratory work, the topic of which was encryption by gamming. Implemented encryption using a finite- length gamma 👏🏼&lt;/li&gt;
+&lt;li&gt;She also completed the third laboratory work in the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, which was aimed at gaining skills in working with Octave.&lt;/li&gt;
+&lt;li&gt;Completed laboratory work on the discipline &amp;ldquo;Modeling of wireless networks&amp;rdquo;, thanks to which she learned how to apply distributions to transform random variables.&lt;/li&gt;
+&lt;li&gt;She wrote a test paper on the discipline &amp;ldquo;Additional chapters of queuing theory&amp;rdquo;, in which a mathematical model of a network with unicast connections was considered. To be honest, it wasn&amp;rsquo;t difficult. But in a week there will be another test in this discipline. Wish me luck!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I continue to keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Last week</title>
+      <link>https://ZlataDyachenko.github.io/post/getting-started/</link>
+      <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://ZlataDyachenko.github.io/post/getting-started/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;last-week&#34;&gt;Last week&lt;/h2&gt;
+&lt;p&gt;Last week I managed to complete several academic tasks, which I would like to tell you more about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the discipline &amp;ldquo;Mathematical foundations of information security and information security&amp;rdquo;, I completed the second laboratory work, the topic of which was encryption using permutations. The topic of cryptography is very entertaining, and I could write a post about it.&lt;/li&gt;
+&lt;li&gt;She also completed the second laboratory work on the discipline &amp;ldquo;Scientific Programming&amp;rdquo;, which was aimed at gaining skills to work with the Markdown markup language. If you see this post, it means I&amp;rsquo;m doing well :)&lt;/li&gt;
+&lt;li&gt;I completed two laboratory works on the discipline &amp;ldquo;Modeling of wireless networks&amp;rdquo;, thanks to which I remembered the basic methods of working with statistical data in Python.&lt;/li&gt;
+&lt;li&gt;Continued studying French. A little more and this site will have the opportunity to choose French as the language (I&amp;rsquo;m kidding, I&amp;rsquo;m still a long way from that, but I can tell you what my name is).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I will keep you informed of my academic achievements. Au revoir! 👋&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
